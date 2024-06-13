@@ -11,16 +11,15 @@ public class Main {
     Kendaraan kendaraan6 = new Kendaraan("6666", "Fortuner", "Mobil", 1000, 2000, 6);
     Kendaraan kendaraan7 = new Kendaraan("7777", "Brio", "Mobil", 1000, 2024, 7);
 
-    // Transaksipajak transaksi1 = new Transaksipajak(6, 100000, 5000, kendaraan1);
-    // Transaksipajak transaksi2 = new Transaksipajak(7, 150000, 7000, kendaraan1);
-    // Transaksipajak transaksi3 = new Transaksipajak(8, 200000, 8000, kendaraan1);
-    // Transaksipajak transaksi4 = new Transaksipajak(9, 300000, 1000000,
-    // kendaraan1);
+    Transaksipajak transaksi1 = new Transaksipajak(6, 100000, 5000, kendaraan1);
+    Transaksipajak transaksi2 = new Transaksipajak(7, 150000, 7000, kendaraan2);
+    Transaksipajak transaksi3 = new Transaksipajak(8, 200000, 8000, kendaraan3);
+    Transaksipajak transaksi4 = new Transaksipajak(9, 300000, 1000000, kendaraan4);
 
-    // list.addLast(transaksi1);
-    // list.addLast(transaksi2);
-    // list.addLast(transaksi3);
-    // list.addLast(transaksi4);
+    list.addLast(transaksi1);
+    list.addLast(transaksi2);
+    list.addLast(transaksi3);
+    list.addLast(transaksi4);
 
     // System.out.println("Daftar Transaksi Pajak:");
     // list.print();
@@ -48,16 +47,18 @@ public class Main {
       int menu = sc.nextInt();
       switch (menu) {
         case 1:
-        System.out.println("==============================================");
-        System.out.println("|                 DAFTAR KENDARAAN           |");
-        System.out.println("==============================================");
-        
-        break;
+          System.out.println("=============================================================================");
+          System.out.println("|                              DAFTAR KENDARAAN                             |");
+          System.out.println("=============================================================================");
+          list.print();
+          System.out.println("=============================================================================");
+          
+          break;
         case 2:
         case 3:
         case 4:
         case 0:
-        break;
+          break;
       }
     } while (stop);
   }
